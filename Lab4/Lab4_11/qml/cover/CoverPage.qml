@@ -3,20 +3,8 @@ import Sailfish.Silica 1.0
 
 CoverBackground {
         Label{
-            property int count: 0
             id:coverLabel
-            text: count;
+            text: coverIn
             anchors.centerIn: parent
         }
-
-    CoverActionList{
-        CoverAction{
-            iconSource: "image://theme/icon-cover-cancel"
-            onTriggered: coverLabel.count--;
-        }
-        CoverAction{
-            iconSource: "image://theme/icon-cover-new"
-            onTriggered: coverLabel.count++;
-        }
-    }
 }
